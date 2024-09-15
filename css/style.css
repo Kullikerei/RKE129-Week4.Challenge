@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+body {
+    background: linear-gradient(to right, #17d46c, #feb47b);
+}
+.header {
+    color:rgb(5, 117, 102);
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    position: relative;
+    animation: header;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header {
+    0% {top: -250px}
+    50% {top: -50px;}
+    100%{top: 0;}
+
+}
+.img {
+    border-radius: 50%;
+    width: 200px;
+    margin-left: 42%;
+    position: relative;
+    animation: img;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes img {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.ingredients {
+    border: 1px solid rgb(14, 191, 17);
+    font-family: "Mulish", sans-serif;
+    font-size: 120%;
+    color:rgb(0, 61, 5);
+    width: 20%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: relative;
+    animation: ingredients;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes ingredients {
+    0% {left: -300px}
+    100% {left: 0;}
+}
+
+.instructions {
+    border: 0.1px solid rgb(126, 134, 226);
+    font-family: "Mulish", sans-serif;
+    color: rgb(0, 15, 126);
+    font-size: 140%;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    animation: instructions;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes instructions {
+    0% {left: -300px}
+    100% {left: 0;}
+}
+
+.btn {
+    opacity: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    animation: aniBtn;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes aniBtn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.footer {
+    color: rgb(247, 2, 125);
+    font-family: "Mulish", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
